@@ -1,12 +1,18 @@
-program hello
-    implicit none
+PROGRAM main
+  IMPLICIT NONE
+  INTEGER :: a,b
+  a = 3
+  b = 5
+  PRINT *,funct(a,b)
 
-    integer :: array(10)
+CONTAINS
 
-    array = [1,2,3,4,5,6,7,8,9,10]
+  FUNCTION funct(a,b)
+    IMPLICIT NONE
+    INTEGER :: funct
+    INTEGER :: a,b
 
-    print *, array(:5)
-    print *, array(5:)
-    print *, array(2:10:2)
+    funct = a + b
+  END FUNCTION funct
   
-  end program hello
+END PROGRAM main
