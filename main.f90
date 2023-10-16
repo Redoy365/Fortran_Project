@@ -2,11 +2,11 @@ program printNum
     implicit none  
     
        ! define variables
-       integer :: n
+       integer :: n = 1
        
-       do n = 11, 20     
-          ! printing the value of n 
-          print*,  n 
-       end do 
+       do while (n<5) 
+        print *,'Hello World',n
+        n = n+1
+       end do
        
     end program printNum  
